@@ -36,4 +36,4 @@ display_statistics
 This method prints the total number of tickets submitted, the number of open tickets, and the number of closed tickets.
 
 Main Function
-The main function creates a new HelpdeskSystem object and uses it to submit three support tickets, display the ticket statistics, resolve two tickets, reopen one ticket, display all three tickets, and display the ticket statistics again.# IT5016D_Assessment_3
+The main function creates a new HelpdeskSystem object and uses it to submit three support tickets, display the ticket statistics, resolve two tickets, reopen one ticket, display all three tickets, and display the ticket statistics again.
