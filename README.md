@@ -1,39 +1,34 @@
- Helpdesk System
- 
-This is a Python program that simulates a basic helpdesk system. The program includes two classes, SupportTicket and HelpdeskSystem.
-
-SupportTicket Class
-The SupportTicket class represents a single support ticket submitted by a user. It has the following attributes:
-
-ticket_id: A unique identifier for the ticket
-staff_id: The ID of the staff member who is handling the ticket
-name: The name of the user who submitted the ticket
-email: The email address of the user who submitted the ticket
-description: A brief description of the issue being reported
-response: The response provided by the staff member
-status: The status of the ticket, either "Open" or "Closed"
-The class also has a __str__ method that returns a string representation of the ticket's attributes.
-
-HelpdeskSystem Class
-The HelpdeskSystem class represents the entire helpdesk system. It has the following attributes:
-
-ticket_id: A static variable that keeps track of the next available ticket ID
-open_tickets: The number of currently open tickets
-closed_tickets: The number of closed tickets
-tickets: A list that contains all submitted tickets
-The class has the following methods:
-
-submit_ticket
-This method creates a new SupportTicket object with the given parameters, adds it to the tickets list, and increments the ticket_id and open_tickets counters. If the ticket's description contains the string "Password Change", it sets the ticket's response to a new password generated from the staff ID and user name, and sets the ticket's status to "Closed". It then returns the new SupportTicket object.
-
-respond_to_ticket
-This method searches for the ticket with the given ticket ID and updates its response attribute with the provided response. If the ticket's status is "Open" and its description contains the string "Password Change", it sets the ticket's status to "Closed" and updates the open_tickets and closed_tickets counters accordingly. If the ticket's status is "Closed", it sets the status to "Reopened" and updates the open_tickets and closed_tickets counters accordingly.
-
-display_ticket
-This method searches for the ticket with the given ticket ID and prints its string representation.
-
-display_statistics
-This method prints the total number of tickets submitted, the number of open tickets, and the number of closed tickets.
-
-Main Function
-The main function creates a new HelpdeskSystem object and uses it to submit three support tickets, display the ticket statistics, resolve two tickets, reopen one ticket, display all three tickets, and display the ticket statistics again.
+#BALJEET CODING
+* This File is to understand how the code in hello.py file works.
+* First I selected a topic of "Python program to check if year is leap year or not".
+Coding start
+#Coding start
+* So i first created an variable named "year" and to input the year in "year" variable i used input function. Since years are numeric, i used into function so the code can run properly.
+* I put "enter a year/n* in input function so people can understand that you have to enter year in terminal:
+year = int(input("enter a Year\n*))
+厶
+* To check if year is leap year or not i used "if", "elif" and "else" statements in the code.
+* To check if year is a leap year in Python is found by checking the divisibility of the year with 4 and 400. If a year is perfectly divisible by 4, then it is a leap year. However, if it is a century year (ending with 00), then it will be checked with 400.
+* So i used "if" statement for the divisibilty of the year with 400 and 100, Also, i used "elif" statement fot the divisibilty of the year with 4 and non-divisibility with 100. And at last, i used "else" statement so if year does not complete the if and elif statment the year won't be Leap
+* if year meets the "if" condition i used printO function to print year, "is a leap year and the first year is variable of this code.
+if (year % 400 = = 0) and (year % 100 = = 0):
+print (year, "Is a leap year")
+* The output will look like:
+x year is a leap year (here x is taken as an example for the year)
+year = int(input(enter a Year\ni))
+* To check if year is leap year or not i used "if", "elif" and "else" statements in the code.
+* To check if year is a leap year in Python is found by checking the divisibility of the year with 4 and 400. If a year is perfectly divisible by 4, then it is a leap year. However, if it is a century year (ending with 00), then it will be checked with 400.
+* So i used "if" statement for the divisibilty of the year with 400 and 100. Also, i used "elif" statement fot the divisibilty of the year with 4 and non-divisibility with 100. And at last, i used "else" statetment so if year does not complete the if and elif statment the year won't be Leap year.
+* if year meets the "if" condition i used printo function to print "year, "is a leap year" and the first year is variable of this code.
+if (year % 400 == 0) and (year % 100 = = 0):
+print(year, "is a leap year")
+* The output will look like:
+x year is a leap year (here x' is taken as an examplifor the year)
+* if year meets the "elif" condition i used printO function to print year, "is a leap year" and the first year is variable of this code.
+elif (year % 4 = =0) and (year % 100!= 0):
+print(year, "is a leap year")
+* The output will look like:
+x year is a leap year (here x' is taken as an example for the year)
+* if year doesn't meet neither "if nor "else" condition, it will go to "else" statement and i used printO function to print "year. "is not a leap year" and the first year is variable of this code.
+else:
+print (year, "is not a leap year")
